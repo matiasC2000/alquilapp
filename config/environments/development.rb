@@ -68,7 +68,7 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
-  config.hosts << "3000-vmaranzana-alquilapp-zw00nyuysn2.ws-us72.gitpod.io"
+  config.hosts << "3000-vmaranzana-alquilapp-aj64cl8xq7c.ws-us72.gitpod.io"
 
   # Para el mail de devise (creo)
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
