@@ -11,6 +11,24 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="nav justify-content-end">
+      <% if user_signed_in? %>
+        <div class="nav-item">
+          <%= link_to "Salir", destroy_user_session_path, method: :delete %>
+        </div>
+      <% else %>
+        <div class="nav-item">
+          <%= link_to "Iniciar Sesion", new_user_session_path %>
+          <%= link_to "Registrarme", new_user_registration_path %>
+        </div>
+      <% end %>
+    </div>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
