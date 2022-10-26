@@ -70,4 +70,7 @@ Rails.application.configure do
 
   config.hosts << "3000-vmaranzana-alquilapp-zw00nyuysn2.ws-us72.gitpod.io"
 
+  # Para el mail de devise (creo)
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 end
