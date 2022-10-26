@@ -15,6 +15,18 @@
  */
 
 
-h1{
-    color:red;
+ .barra-navegacion{
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    background-color: bisque;
+    z-index: 10;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*espacio entre diferentes líneas*/
 }
