@@ -73,3 +73,7 @@ group :test do
 end
 
 gem "hirb"
+
+gem "devise"
+
+gem "devise-i18n-views"
